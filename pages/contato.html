@@ -28,7 +28,7 @@
 		#card{
 			max-width: 60%;
 			margin-left: 20%;
-			margin-top: 10%;
+			margin-top: 8%;
 		}
 	</style>
 
@@ -46,6 +46,7 @@
 			<a href="../index.html#pultimas">Ultimas</a>
 			<a href="../index.html#ptransmissoes">Transmissões</a>
 		</center>
+		<hr>
 		<div id="card">
 			<fieldset>
 				<center><h1>Contato</h1></center>
@@ -56,7 +57,7 @@
 					<input type="text" name="nome" size="50" placeholder="Nome Completo" ><br><br>
 
 					<label for="email">E-mail</label><br>
-					<input type="email" name="email" placeholder="Email" ><br><br>
+					<input type="email" name="email" size="50" placeholder="Email" ><br><br>
 
 					<label for="senha">Senha</label><br>
 					<input type="password" name="senha" size="50" placeholder="senha" ><br><br>
@@ -73,19 +74,42 @@
 					<label for="aulas">Numero de Aulas</label><br>
 					<input type="number" name="aulas" min="1" max="100" step="1"><br><br>
 
-					<label for="6">6</label><br>
-					<input type="text" name="6" size="50" placeholder="6" ><br><br>
+					<label for="nivel">Nível: </label><br>
+					<select name="nivel">
+						<option value="">Selecione</option>
+						<option value="1">Basico</option>
+						<option value="2">Intermediário</option>
+						<option value="3">Avançado</option>
+					</select><br><br>
 
-					<label for="7">7</label><br>
-					<input type="text" name="7" size="50" placeholder="7" ><br><br>
-
-					<label for="8">8</label><br>
-					<input type="text" name="8" size="50" placeholder="8" ><br><br>
-
+					<fieldset>
+						<legend>Genero</legend><br>
+						<input type="radio" name="genero" placeholder="genero" value="1" ><span>Masculino</span><br><br>
+						<input type="radio" name="genero" placeholder="genero" value="0" ><span>Feminino</span><br><br>
+					</fieldset>
+					<br><br>
+					<fieldset>
+						<legend>Atividades</legend><br>
+						<input type="checkbox" name="atividade" value="Musculacao">Musculacao<br>
+						<input type="checkbox" name="atividade" value="Pilates">Pilates<br>
+						<input type="checkbox" name="atividade" value="Corrida">Corrida<br>
+					</fieldset>
+					<br><br>
+					<label for="msg">Mensagem</label><br>
+					<textarea name="msg" cols="50" rows="3"></textarea><br><br>
 					
 					<button type="submit">Enviar</button>
+					<button type="reset">Limpar</button>
 				</form>
 			</fieldset>
 		</div>
+		<br>
+		<br>
+		<hr>	
+		<center>
+			<p>
+				Desenvolvidor por: <strong><a href="https://github.com/kristyanhenrique" target="_blank">Preguiça Falante</a></strong> - 2022
+			</p>
+		</center>
 	</body>
-</html>
+	</html>
