@@ -1,78 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="Description" content="Jornal cômico sobre mundos fictícios de rpg">
 	<meta name="keyword" content="Jornal,engraçado,fake news,noticias comicas,mundo bizarro,rpg,ficção">
 	<title>O Artefato</title>
-</head>
-<body>
-	<style>
-		body{
-			font-family: 'Roboto', sans-serif;
-			/*background-color: #E1DEBE;*/
-		}
-
-		h1,h2,h4{
-			font-family: 'Balthazar', serif;
-		}
-		#cartao{
-			border-style: solid;
-			border-width: 1px;
-		}
-		#menus{
-			border-style: solid;
-			border-width: 1px;
-		}
-		#card{
-			max-width: 60%;
-			margin-left: 20%;
-			margin-top: 8%;
-		}
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<div class="col s12">-->
-		<img class="center-align" src="../img/banner.png" alt="mago na lateral esquerda lançando o feitiço flecha acida em um dragão prateado." width='100%' height="300">
-		<center>
-			<a href="../index.html">Home</a>
-			<a href="../index.html#ptop5">Top 5</a>
-			<a href="../index.html#pultimas">Ultimas</a>
-			<a href="../index.html#ptransmissoes">Transmissões</a>
-		</center>
-		<hr>
+</head>
+<body>
+	<img src="../img/banner.png" id="banner" alt="mago na lateral esquerda lançando o feitiço flecha acida em um dragão prateado.">
+	<div id="menu">
+		<a href="../index.html"><span id="itemMenu">Home</span></a>
+		<a href="../index.html#ptop5"><span id="itemMenu">Top 5</span></a>
+		<a href="../index.html#pultimas"><span id="itemMenu">Ultimas</span></a>
+		<a href="../index.html#ptransmissoes"><span id="itemMenu">Transmissões</span></a>
+		<a href="#"><span id="itemMenu">Contato</span></a>
+	</div>
+	<div id="container">
 		<div id="card">
 			<fieldset>
-				<center><h1>Contato</h1></center>
+				<h1>Contato</h1>
 				<form method="post" name="contato" action="" >
-					<!--(label[for="$"]{$}input[name="$" required])*5-->
 
 					<label for="nome">Nome</label> <br>
-					<input type="text" name="nome" size="50" placeholder="Nome Completo" ><br><br>
+					<input type="text" name="nome" placeholder="Nome Completo" >
 
 					<label for="email">E-mail</label><br>
-					<input type="email" name="email" size="50" placeholder="Email" ><br><br>
+					<input type="email" name="email" placeholder="Email" >
 
 					<label for="senha">Senha</label><br>
-					<input type="password" name="senha" size="50" placeholder="senha" ><br><br>
+					<input type="password" name="senha" placeholder="senha" >
 
 					<label for="telefone">Telefone</label><br>
-					<input type="tel" name="telefone" size="50" placeholder="(11) 12345-1234" pattern="^\([1-9]{2}\) [9]{1}[0-9]{4,5}-[0-9]{4}$" ><br><br>
+					<input type="tel" name="telefone" placeholder="(11) 12345-1234" pattern="^\([1-9]{2}\) [9]{1}[0-9]{4,5}-[0-9]{4}$" >
 
 					<label for="data">Data</label><br>
-					<input type="date" name="data"><br><br>
+					<input type="date" name="data">
 
 					<label for="time">Hora</label><br>
-					<input type="time" name="time"><br><br>
+					<input type="time" name="time">
 
 					<label for="aulas">Numero de Aulas</label><br>
-					<input type="number" name="aulas" min="1" max="100" step="1"><br><br>
+					<input type="number" name="aulas" min="1" max="100" step="1">
 
 					<label for="nivel">Nível: </label><br>
 					<select name="nivel">
@@ -80,36 +54,32 @@
 						<option value="1">Basico</option>
 						<option value="2">Intermediário</option>
 						<option value="3">Avançado</option>
-					</select><br><br>
+					</select>
 
 					<fieldset>
 						<legend>Genero</legend><br>
-						<input type="radio" name="genero" placeholder="genero" value="1" ><span>Masculino</span><br><br>
-						<input type="radio" name="genero" placeholder="genero" value="0" ><span>Feminino</span><br><br>
+						<input type="radio" name="genero" placeholder="genero" value="1" ><span>Masculino</span>
+						<input type="radio" name="genero" placeholder="genero" value="0" ><span>Feminino</span>
 					</fieldset>
-					<br><br>
+					
 					<fieldset>
 						<legend>Atividades</legend><br>
 						<input type="checkbox" name="atividade" value="Musculacao">Musculacao<br>
 						<input type="checkbox" name="atividade" value="Pilates">Pilates<br>
 						<input type="checkbox" name="atividade" value="Corrida">Corrida<br>
 					</fieldset>
-					<br><br>
-					<label for="msg">Mensagem</label><br>
-					<textarea name="msg" cols="50" rows="3"></textarea><br><br>
 					
+					<label for="msg">Mensagem</label><br>
+					<textarea name="msg" cols="50" rows="3"></textarea>
+
 					<button type="submit">Enviar</button>
 					<button type="reset">Limpar</button>
 				</form>
 			</fieldset>
 		</div>
-		<br>
-		<br>
-		<hr>	
-		<center>
-			<p>
-				Desenvolvidor por: <strong><a href="https://github.com/kristyanhenrique" target="_blank">Preguiça Falante</a></strong> - 2022
-			</p>
-		</center>
-	</body>
-	</html>
+	</div>	
+	<p>
+		Desenvolvidor por: <strong><a href="https://github.com/kristyanhenrique" target="_blank">Preguiça Falante</a></strong> - 2022
+	</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #bbdefb;
+	margin:0%; padding: 0%;
+}
+h1,h2,h4{
+	font-family: 'Balthazar', serif;
+	text-align: center;
+
+}
+
+p{
+	text-align: justify;
+	font-size: 1.25rem;
+}
+
+ul{
+	font-size: 1.25rem;
+}
+
+#container{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+#banner{
+	width: 100%;
+	height: 300px;
+
+}
+
+
+#menu{
+	background-color: #90caf9;
+	font-weight: bold;
+	margin:-0.2%;
+}
+
+#itemMenu{
+	margin-left: 14%;
+	text-align: center;
+}
+
+.card{
+	background-color: #eceff1;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	
+}
+.card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
