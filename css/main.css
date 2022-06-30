@@ -1,14 +1,34 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	background-color: #bbdefb;
+	
 	margin:0%; padding: 0%;
+	background-color: #ffecb3;
+	background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+	max-width: 100%;
+	overflow-x: hidden;
 }
+
+
 h1,h2,h4{
 	font-family: 'Balthazar', serif;
 	text-align: center;
+}
+#banner{
+	width: 100%;
+	height: 300px;
 
 }
 
+nav{
+	padding: 1.25%;
+}
+
+#menu{
+	font-weight: bold;
+	margin:-0.2%;
+	background-color: #ffecb3;
+	background-image: url("https://www.transparenttextures.com/patterns/stressed-linen.png");
+}
 p{
 	text-align: justify;
 	font-size: 1.25rem;
@@ -18,34 +38,49 @@ ul{
 	font-size: 1.25rem;
 }
 
+
 #container{
 	margin-left: 15%;
 	margin-right: 15%;
 }
-#banner{
-	width: 100%;
-	height: 300px;
 
-}
-
-
-#menu{
-	background-color: #90caf9;
-	font-weight: bold;
-	margin:-0.2%;
-}
-
-#itemMenu{
-	margin-left: 14%;
+.itemMenu{
+	margin-left: 13%;
 	text-align: center;
+	text-decoration: none;
+	font-size: 1.25rem;
 }
 
 .card{
 	background-color: #eceff1;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	
+	padding: 1%;
+	border: solid 1px;
 }
-.card:hover{
+
+.card{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#container2{
+	display: flex;
+}
+
+.card2{
+	width: 20%;
+	border: solid 1px;
+	margin-left: 9%;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.card2>img{
+	width: 100%;
+}
+.card2>div>h3{
+	text-align: center;
+}
+.card2>div>p{
+	padding: 1%;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="Description" content="Jornal cômico sobre mundos fictícios de rpg">
@@ -16,14 +17,12 @@
 	<header>
 		<img src="img/banner.png" id="banner" alt="mago na lateral esquerda lançando o feitiço flecha acida em um dragão prateado.">
 	</header>
-	<nav>
-		<div id="menu">
-			<a href="#"><span id="itemMenu">Home</span></a>
-			<a href="#ptop5"><span id="itemMenu">Top 5</span></a>
-			<a href="#pultimas"><span id="itemMenu">Ultimas</span></a>
-			<a href="#ptransmissoes"><span id="itemMenu">Transmissões</span></a>
-			<a href="pages/contato.html"><span id="itemMenu">Contato</span></a>
-		</div>
+	<nav id="menu">
+		<a href="#"><span class="itemMenu">Home</span></a>
+		<a href="#ptop5"><span class="itemMenu">Top 5</span></a>
+		<a href="#pultimas"><span class="itemMenu">Ultimas</span></a>
+		<a href="#ptransmissoes"><span class="itemMenu">Transmissões</span></a>
+		<a href="pages/contato.html"><span class="itemMenu">Contato</span></a>
 	</nav>
 	<div id="container">
 		<article class="card">
@@ -42,59 +41,60 @@
 				<li>Estranho caso de fênix que esta a 6 dias em cinzas;</li>
 			</ul>
 		</section>
-		<fieldset id="pultimas" class="card">
+
+		<section id="pultimas" class="card">
 			<h2>Ultimas Noticias</h2>
 			<p>As mais novas noticias dos mais diversos reinos.</p>
+
+			<div id="container2">
+				<div class="card2">
+					<img src="img/Bruxo buscava novo patrono e encontra sua sogra 1.png" alt="">
+					<div>
+						<h3>Bruxo e Sua Sogra</h3>
+						<p>Bruxo vai em busca de novo patrono  demonio e invoca sogra por “engano”.</p>
+					</div>
+				</div>
+
+				<div class="card2">
+					<img src="img/Diabo vai pra guerra no dia errado 1.png" alt="">
+					<div>
+						<h3>Demonios e Suas Batalhas</h3>
+						<p>General demonio vai à guerra em local errado e luta a batalha de outro.</p>
+					</div>
+				</div>
+
+				<div class="card2">
+					<img src="img/Gases de Tarrasque assustam moradores 1.png" alt="">
+					<div>
+						<h3>Idosas e Tarrasques</h3>
+						<p>Idosa adota filhote de tarrasque pensando que era um murloc.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="card" id="ptransmissoes">
 			<table>
 				<tr>
-					<td>
-						<img src="img/Bruxo buscava novo patrono e encontra sua sogra 1.png" alt="">
+					<td colspan="2">
+						<p>
+							Acidente com jovem aprendiz de feiticeiro deixa bairro eletrizado. Jovem aprendiz de feiticeiro fica em estado de choque após acidente com feitiço elétrico. O jovem N’Prestow se feriu tentando utilizar o avançado feitiço “thundara”. O aprendiz estaria tentando impressionar uma garota com suas habilidades mágicas, veja ao lado o momento que o feitiço foge de controle.
+						</p>
 					</td>
-					<td>
-						<img src="img/Diabo vai pra guerra no dia errado 1.png" alt="">
-					</td>
-					<td>
-						<img src="img/Gases de Tarrasque assustam moradores 1.png" alt="">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<h3>Bruxo e Sua Sogra</h3>
-					</td>
-					<td>
-						<h3>Demonios e Suas Batalhas</h3>
-					</td>
-					<td>
-						<h3>Idosas e Tarrasques</h3>
+					<td rowspan="2" >
+						<iframe src="https://www.retrogames.cc/embed/10030-street-fighter-ii-champion-edition-street-fighter-2-920513-etc.html" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
 					</td>
 				</tr>
 				<tr>
-					<td> Bruxo vai em busca de novo patrono <br> demonio e invoca sogra por “engano”.</td>
-					<td> General demonio vai à guerra em <br>local errado e luta a batalha de outro.</td>
-					<td> Idosa adota filhote de tarrasque <br>pensando que era um murloc.</td>
+					<td><img src="img/akar-icons_instagram-fill.png" alt=""> @Instagram</td>
+					<td><img src="img/carbon_email.png" alt=""> @email</td>
 				</tr>
 			</table>
-		</fieldset>
-		<hr id="ptransmissoes">
-		<table>
-			<tr>
-				<td colspan="2">
-					<p>
-						Acidente com jovem aprendiz de feiticeiro deixa bairro eletrizado. Jovem aprendiz de feiticeiro fica em estado de choque após acidente com feitiço elétrico. O jovem N’Prestow se feriu tentando utilizar o avançado feitiço “thundara”. O aprendiz estaria tentando impressionar uma garota com suas habilidades mágicas, veja ao lado o momento que o feitiço foge de controle.
-					</p>
-				</td>
-				<td rowspan="2" >
-					<iframe src="https://www.retrogames.cc/embed/10030-street-fighter-ii-champion-edition-street-fighter-2-920513-etc.html" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
-				</td>
-			</tr>
-			<tr>
-				<td><img src="img/akar-icons_instagram-fill.png" alt=""> @Instagram</td>
-				<td><img src="img/carbon_email.png" alt=""> @email</td>
-			</tr>
-		</table>
+		</section>
+
 	</div>
-	<p>
+	<footer>
 		Desenvolvidor por: <strong><a href="https://github.com/kristyanhenrique" target="_blank">Preguiça Falante</a></strong> - 2022
-	</p>
+	</footer>
 </body>
 </html>	
